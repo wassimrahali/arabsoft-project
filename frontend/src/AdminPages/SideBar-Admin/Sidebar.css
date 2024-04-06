@@ -1,0 +1,72 @@
+/* Sidebar.css */
+
+@font-face {
+  font-family: 'Intrum Sans';
+  src: url('../../assets/fonts/IntrumSans-Medium.eot');
+  src: local('../Dashboard/Intrum Sans Medium'), local('IntrumSans-Medium'),
+      url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+      url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.sidebar {
+
+  margin-left: 25px;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  background-color: white;
+  font-family: 'Intrum Sans';
+}
+
+.sidebar h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-left: 10px; /* Add space between icon and link */
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:#0081B8
+}
+
+.sidebar .fa-icon {
+  font-size: 18px;
+}
+
+.logout {
+  margin-top: 250px;
+}
+
+.rau {
+  margin-top: 100px;
+}
+
+hr {
+  color: rgb(0, 0, 0);
+}

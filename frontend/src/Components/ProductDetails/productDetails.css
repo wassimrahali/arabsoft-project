@@ -1,0 +1,131 @@
+
+  
+  /* Signin.css */
+@font-face {
+  font-family: 'Intrum Sans';
+  src: url('../../assets/fonts/IntrumSans-Medium.eot');
+  src: local('Intrum Sans Medium'), local('IntrumSans-Medium'),
+      url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+      url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+  .ul-check {
+    margin-bottom: 50px; }
+    .ul-check li {
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 15px;
+      line-height: 1.5; }
+      .ul-check li:before {
+        left: 0;
+        font-size: 20px;
+        top: -.3rem;
+        font-family: "icomoon";
+        content: "\e5ca";
+        position: absolute; }
+
+    .ul-check.primary li:before {
+      color: #1d858bef;
+    
+    }
+  
+  .select-wrap, .wrap-icon {
+    position: relative; }
+    .select-wrap .icon, .wrap-icon .icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 22px; }
+    .select-wrap select, .wrap-icon select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%; }
+/* ./productDetails.css */
+
+
+/* productDetails.css */
+
+.custom-btn {
+  background-color: #634274;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Intrum Sans';
+}
+
+
+.custom-btn:hover {
+  background-color: #634274;
+  color: #fff;
+  
+  /* Replace with your custom hover color */
+}
+
+.custom-heading {
+  font-family: 'Intrum Sans';
+  color: #634274; /* Your custom text color */
+}
+
+.custom-light-text {
+  font-weight: lighter; /* Your custom font weight for light text */
+  color:  black;/* Your custom light text color */
+}
+
+.custom-paragraph {
+  font-family: 'Intrum Sans';
+  color: black; /* Your custom text color */
+}
+
+
+/* Custom CSS for the section */
+.site-section {
+  background-color: #f8f8f8;
+  padding: 50px 0; /* Adjust the padding as needed */
+}
+
+/* Custom CSS for the boxes */
+.box-with-humber {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box-with-humber:hover {
+  transform: scale(1.05);
+}
+
+/* Customize other styles as needed */
+.text-primary {
+  color: #007bff;
+}
+
+/* Add more custom styles based on your design preferences */
+
+
+.custom-h2 {
+  font-family: 'Intrum Sans';
+  color: #634274; /* Your custom text color */
+}
+
+.custom-p {
+  font-family: 'Intrum Sans';
+  color: black; /* Your custom text color */
+}
+
+
+
+.custom-list-item {
+  color: black; /* Replace with your preferred color code */
+  font-family: 'Intrum Sans';
+
+  /* Add any other styling properties you want for the list items */
+}

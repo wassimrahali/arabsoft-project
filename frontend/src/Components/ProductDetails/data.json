@@ -1,0 +1,34 @@
+{
+  "solution": "AMIN",
+  "topic": "LA GESTION FINANCIÈRE ET COMPTABLE",
+  "description": "Dans un environnement en perpétuelle mutation économique, technologique et règlementaire, le Système d’Information comptable et financier de l’entreprise doit adhérer à toutes les évolutions et conserver son rôle de centralisateur des flux de tout le métier de l’entreprise générateur de transactions comptables et financières. Le système comptable et financier doit obéir à la règlementation légale et fiscale du pays en fournissant tous les rapports et documents exigibles par la législation fiscale. Amin vous assure la couverture de l’intégralité de votre chaîne comptable et financière et vous garantit la fiabilité et la traçabilité de vos opérations quotidiennes. Sa conception modulaire vous permet de vous équiper en fonction de vos besoins.",
+  "features": [
+    "Adhérence aux évolutions économiques, technologiques, et règlementaires",
+    "Centralisation des flux de l'entreprise",
+    "Génération de transactions comptables et financières",
+    "Conformité à la règlementation légale et fiscale",
+    "Production des rapports et documents exigibles par la législation fiscale",
+    "Couverture de l'intégralité de la chaîne comptable et financière",
+    "Fiabilité et traçabilité des opérations quotidiennes",
+    "Conception modulaire pour s'adapter aux besoins",
+    {
+      "Trésorerie Prévisionnelle": [
+        "Mise à jour des comptes de trésorerie",
+        "Gestion des prévisions, de réalisations et des écarts",
+        "Intégration avec la gestion des encaissements, des décaissements, des emprunts et des placements",
+        "Rapports de suivi de la situation prévisionnelle de trésorerie"
+      ]
+    },
+    {
+      "Opérations Bancaires": [
+        "Echelles d’intérêts",
+        "Commissions bancaires",
+        "Contrôle du découvert",
+        "Equilibrage des comptes",
+        "Suivi des conditions prévues par les conventions avec les banques",
+        "Consolidation des comptes",
+        "Analyse des écarts"
+      ]
+    }
+  ]
+}

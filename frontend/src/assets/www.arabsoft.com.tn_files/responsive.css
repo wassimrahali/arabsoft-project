@@ -1,0 +1,719 @@
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.border-right-slide {
+    border-right: 1px solid #4d5e6d;
+}
+
+@media screen and (min-width: 320px) and  (max-width: 767px) {
+    #owl-demo .item h3 {
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+
+        text-align: center;
+
+    }
+    .layer4 img {
+        object-fit: cover;
+        object-position: center;
+        -o-object-fit: cover;
+        -o-object-position: center;
+        width: 100%;
+        min-width: unset !important;
+        min-height: 250px !important;
+        position: relative !important;
+        max-width: 958px;
+        max-height: 458px;
+    }
+
+    .center-xs {
+        position: absolute !important;
+        width: 215px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .layer6 {
+        padding: 0 !important;
+        background-color: white;
+        position: relative;
+        top: 0 !important;
+    }
+
+    .artConter .number p {
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin: 0 !important;
+        padding: 15px !important;
+    }
+
+    .layer5 {
+        background-color: #f3f8fc !important;
+        padding: 62px 15px !important;
+    }
+
+    .layer5A {
+        background-color: #f3f8fc !important;
+        padding: 0 !important;
+    }
+
+    .layer5B {
+        background-color: #f3f8fc;
+        padding: 0 !important;
+        margin-top: 40px;
+    }
+
+    .layer5 h1 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center !important;
+        font-size: 26px;
+        font-weight: 400;
+        color: #13284d;
+        margin-bottom: 35px;
+        padding: 0 !important;
+    }
+
+    .layer5 p {
+        color: #48515d;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center !important;
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .listDEsx {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        padding-left: 15px !important;
+    }
+
+    .layer5 button {
+        width: 145px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #005fa6;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #005fa6;
+
+        margin-left: auto !important;
+        margin-top: 20px;
+        margin-right: auto !important;
+        outline: none;
+        position: relative !important;
+        top: 15px !important;
+    }
+
+    .layer4 ul {
+        padding: 0;
+        display: block;
+        margin-bottom: 25px !important;
+    }
+
+    .artConter .number {
+        margin-bottom: 25px !important;
+    }
+
+    .artConter .number:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .logENTSC .llogDN {
+        padding: 15px 0 !important;
+        margin-bottom: 20px !important;
+        margin-right: 40px !important;
+    }
+
+    .logENTSC .llogDN p {
+        font-size: 14px !important;
+    }
+
+    .layer4 {
+        padding: 0 !important;
+        background-color: white;
+        display: block !important;
+    }
+
+    .layer4 h3 {
+        color: #48515d;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 20px;
+        padding: 0 !important;
+    }
+
+    .layer4 ul li {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 !important;
+    }
+
+    .layer4 ul {
+        padding: 0 !important;
+        display: block;
+    }
+
+    .layer4 ul li p {
+        float: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #287fa7;
+        text-align: left;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        left: 30px;
+    }
+
+    .layer3 h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 25px !important;
+        color: white;
+        text-align: center;
+        margin-top: 80px !important;
+        margin-bottom: 30px !important;
+        padding: 0 25px !important;
+    }
+
+    .layer3 p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px !important;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 43px !important;
+        padding: 0 20px !important;
+    }
+
+    .footerContB {
+        padding-left: 15px !important;
+        margin-bottom: 25px;
+    }
+
+    .footerContC {
+        padding-right: 15px !important;
+        margin-bottom: 25px;
+        padding-left: 15px !important;
+    }
+
+    .footerContD {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        margin-bottom: 25px;
+    }
+
+    .footerContA {
+        margin-bottom: 25px;
+    }
+
+    .footerDC h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        color: white;
+        text-align: center !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        font-weight: 300;
+    }
+
+    .footerDC img {
+        width: 47px;
+        height: 30px;
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: auto !important;
+    }
+
+    .footerDC h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        color: white;
+        text-align: center !important;
+        font-weight: 300;
+        margin-top: 15px !important;
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+    .btnLayerSlider p {
+        display: block !important;
+    }
+
+    .carousel-caption h3 {
+        font-family: 'Roboto';
+        font-size: 30px !important;
+        font-weight: 700;
+    }
+
+    #myCarousel {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 365px !important;
+
+    }
+
+    #myCarousel img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 365px !important;
+    }
+
+    .frame {
+        height: 150px;
+        line-height: 250px;
+        width: 1260px !important;
+        overflow: hidden;
+    }
+
+    .logENTSCPO {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-width: 1260px !important;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: #080808;
+        opacity: 0.2;
+    }
+
+    .navHomeO {
+        position: absolute;
+        width: 100%;
+        height: 550px !important;
+        background-color: #011d32;
+        opacity: 0.8;
+    }
+
+    .menuArt {
+
+        display: table !important;
+        float: none !important;
+        padding: 30px 20px !important;
+        height: 100px !important;
+        width: 100% !important;
+        cursor: pointer;
+    }
+
+    .navHome {
+        height: 550px !important;
+        position: relative;
+        top: 0 !important;
+        background: transparent;
+        padding: 0 !important;
+        z-index: 123;
+        display: flex;
+        align-items: center;
+    }
+
+    .navHome .menuArt img {
+        width: 31.5px;
+        height: 31px;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .navHome .menuArt h1 {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-align: center !important;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative;
+        top: 10px !important;
+    }
+
+    .navHome .menuArt i {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-align: center !important;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 !important;
+        position: relative !important;
+
+        top: 10px !important;
+        padding: 0 !important;
+        font-style: normal !important;
+    }
+
+    .navHome .container {
+        padding: 0 !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        width: 100% !important;
+
+    }
+
+    .sectionHome {
+        position: relative;
+        top: 0 !important;
+        padding: 0 !important;
+    }
+
+    .border-right-slide {
+        border-right: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and  (max-width: 991px) {
+
+    .layer4 img {
+        object-fit: cover;
+        object-position: center;
+        -o-object-fit: cover;
+        -o-object-position: center;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        position: relative !important;
+        max-width: 958px;
+    }
+    .border-right-slide {
+        border-right: 1px solid #4d5e6d;
+        border-bottom: 1px solid #4d5e6d;
+
+    }
+
+    .layer6 {
+        padding: 0 !important;
+        background-color: white;
+        position: relative;
+        top: 0 !important;
+    }
+
+    .layer5 {
+        background-color: #f3f8fc !important;
+        padding: 62px 15px !important;
+    }
+
+    .layer5A {
+        background-color: #f3f8fc !important;
+        padding: 0 25px !important;
+    }
+
+    .layer5B {
+        background-color: #f3f8fc;
+        padding: 0 !important;
+        margin-top: 40px;
+    }
+
+    .artConter .number p {
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .no-margin-right-sm {
+        margin-right: 0 !important;
+    }
+
+    .margin-regleage {
+        margin-right: 0 !important;
+        margin-left: 2% !important;
+    }
+
+    .logENTSC .llogDN {
+        padding: 20px !important;
+        margin-right: 40px !important;
+    }
+
+    .logENTSC .llogDN p {
+        font-size: 14px !important;
+    }
+
+    .layer4 {
+        padding: 0 !important;
+        background-color: white;
+        display: block !important;
+    }
+
+    .layer3 p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px !important;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 43px !important;
+        padding: 0 !important;
+    }
+
+    .layer3 h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 30px !important;
+        color: white;
+        text-align: center;
+        margin-top: 80px !important;
+        margin-bottom: 30px !important;
+        padding: 0 50px !important;
+    }
+
+    .footerContB {
+        padding-left: 15px !important;
+    }
+
+    .footerContC {
+        padding-right: 15px !important;
+        padding-left: 50px !important;
+    }
+
+    .footerContD {
+        padding-right: 15px !important;
+        padding-left: 50px !important;
+    }
+
+    .footerContA {
+        margin-top: 35px;
+    }
+
+    .navHomeO {
+        position: absolute;
+        width: 100%;
+        height: 200px !important;
+        background-color: #011d32;
+        opacity: 0.8;
+    }
+
+    .navHome {
+        height: 200px !important;
+        position: relative;
+        top: 0 !important;
+        background: transparent;
+        padding: 0 !important;
+        z-index: 123;
+        display: flex;
+        align-items: center;
+    }
+
+    .navHome .container {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and  (max-width: 99999px) {
+	.listDEsx{width: 585px !important;}
+    .layer5AA {
+        width: 585px !important;
+        float: right !important;
+    }
+
+    .layer5BB {
+        width: 100% !important;
+        float: left !important;
+    }
+
+    .layer5BB .col-xs-4 {
+        margin-top: 0 !important;
+        padding: 0 !important;
+
+    }
+
+}
+
+@media screen and (min-width: 992px) and  (max-width: 1199px) {
+    #owl-demo .item h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+
+        text-align: center;
+    }
+
+    .layer6 {
+        padding: 0 !important;
+        background-color: white;
+        position: relative;
+        top: 0 !important;
+    }
+
+    .layer3 p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 43px !important;
+        padding: 0 95px !important;
+    }
+
+    .layer4 ul li span {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin-right: 5px !important;
+        border: 2px solid #438fb2;
+    }
+
+    .layer4 h3 {
+        color: #48515d;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 20px;
+        padding: 0 !important;
+    }
+
+    .layer5BB .col-xs-4 {
+        margin-top: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .footerContB {
+        padding-left: 15px !important;
+    }
+
+    .footerContC {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .footerContD {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .navHome .container {
+        width: 100% !important;
+    }
+
+    .navHome .menuArt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px !important;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    .layer3 h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        margin-top: 80px !important;
+        margin-bottom: 30px !important;
+        padding: 0 100px !important;
+    }
+
+}
+
+@media screen and (min-width: 600px) and  (max-width: 1199px) {
+
+    .sectionHome {
+        position: relative;
+        top: 0 !important;
+        padding: 0 !important;
+    }
+
+    .layer6 button {
+        width: 245px;
+        height: 38px;
+        border: 1px solid #27a4ef;
+        color: #27a4ef;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        position: relative;
+        top: 0 !important;
+        margin-top: 40px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        background-color: transparent;
+        outline: none;
+        margin-bottom: 40px !important;
+    }
+
+}
+
+@media screen and (min-width: 320px) and  (max-width: 599px) {
+
+    .layer6 button {
+        width: 245px;
+        height: 38px;
+        border: 1px solid #27a4ef;
+        color: #27a4ef;
+        border-radius: 4px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        position: relative;
+        top: 0 !important;
+        margin-top: 40px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        background-color: transparent;
+        outline: none;
+        margin-bottom: 40px !important;
+    }
+
+}

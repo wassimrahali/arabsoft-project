@@ -1,0 +1,87 @@
+﻿ 
+﻿<html class="no-js"><head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->  <!--<![endif]-->
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Page Not Found</title>
+
+<meta name="description" content="The page you are looking for was moved, removed, renamed or might never existed.">
+
+ <!-- ================= Favicon ================== -->
+    <link rel="shortcut icon" href="https://www.arabsoft.com.tn/smart/themes/default/assets/img/favicon.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.arabsoft.com.tn/smart/themes/default/assets/img/images/favicon/apple-icon-114x114.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.arabsoft.com.tn/smart/themes/default/assets/img/images/favicon/apple-icon-144x144.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.arabsoft.com.tn/smart/themes/default/assets/img/images/favicon/apple-icon-72x72.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.arabsoft.com.tn/smart/themes/default/assets/img/images/favicon/apple-icon-57x57.png">
+	
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+    
+    <!-- Bootsrap css-->
+    <link href="https://www.arabsoft.com.tn/smart/themes/default/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet"  data-minify="1"/>
+    <!-- css file -->
+    <link href="https://www.arabsoft.com.tn/smart/themes/default/assets/css/404.css" type="text/css" rel="stylesheet"  data-minify="1"/>
+
+
+
+<link rel="stylesheet" href="css/style.css" media="all">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header-primary">
+                 <a href="https://www.arabsoft.com.tn/"  rel="home"><img src="https://www.arabsoft.com.tn/smart/themes/default/assets/img/logo_arabsoft.svg" height="100" alt="logo"></a>
+			</header><!-- header-primary -->
+			
+			<div class="content-primary">
+				<h1 class="title">Page non trouvée</h1>
+				<p class="description">La page que vous recherchez a été déplacée, supprimée, <br>
+Renommé ou pourrait ne jamais exister.</p>
+				<div class="section-footer">
+					<a href="https://www.arabsoft.com.tn/" class="button button-primary btn_transparent">Retour à la page d'accueil</a>
+					<a href="mailto:arabsoft@arabsoft.com.tn" class="button button-default">Signaler une erreur</a>		</div>
+			</div><!-- content-primary -->
+		</div><!-- container -->
+		
+		<footer class="footer-primary">
+			<div class="container">
+				<ul class="nav nav-horizontal links">
+					<li class="link-1">
+						<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</a>
+					</li>
+					<li class="link-2">
+						<a href="" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+					</li>
+					<li class="link-3">
+						<a href="" target="_blank"><i class="fa fa-youtube"></i>Youtube</a>
+					</li>
+					
+					<li class="link-4">
+						<a href="" target="_blank"><i class="fa fa-google-plus"></i>Google plus</a>
+					</li>
+                    <li class="link-5">
+						<a href="https://linkedin.com" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+					</li>
+				</ul>
+			</div><!-- container -->
+		</footer><!-- footer-primary -->
+		
+		<div class="overlay"></div>
+	</div><!-- wrapper -->
+
+</body></html>

@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'Intrum Sans';
+    src: url('../../assets/fonts/IntrumSans-Medium.eot');
+    src: local('Intrum Sans Medium'), local('IntrumSans-Medium'),
+        url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+        url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.admin-reservation-list {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+
+  }
+  
+  
+  .reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .reservation-table th, .reservation-table td {
+    border: 1px solid #3E97FF;
+    padding: 8px;
+    text-align: left;
+    color: black;
+    font-family: 'Intrum Sans';
+  }
+  
+  
+  .reservation-table th {
+    background-color:#0081B8;
+    color: #ffffff;
+    font-family: 'Intrum Sans';
+  }
+  
+  .error-message {
+    color: rgb(255, 0, 93);
+    font-weight: bold;
+  }
+  
+  /* Responsive styles for mobile screens */
+  @media (max-width: 600px) {
+    .reservation-table th, .reservation-table td {
+      font-size: 10px;
+    }
+  
+    .reservation-table th {
+      padding: 6px;
+    }
+
+    .reservation-table {
+        width: 50%;
+      
+      }
+
+      .reservation-table th, .reservation-table td {
+        border: 1px solid #ddd;
+        padding: 4px;
+        text-align: left;
+      }
+  }
+  .titre-Reservation{
+    font-family: 'Intrum Sans';
+    color: black;
+
+  }
+
+  /* AdminRervationList.css */
+
+.admin-reservation-list {
+  display: flex; /* Use flexbox to arrange the sidebar and content */
+  
+ 
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  z-index: 1; /* Ensure the sidebar appears above the content */
+
+}
+
+.content-b {
+  margin-left: 250px; /* Adjust the margin to match the width of the sidebar */
+  padding: 20px;
+  flex-grow: 1; /* Allow the content to grow to fill available space */
+  background-color:#F5F7FA;
+}
+
+

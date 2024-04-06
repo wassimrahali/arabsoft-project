@@ -1,0 +1,203 @@
+/* ReservationForm.css */
+
+/* Add any global styling you need */
+
+
+.reservation-form-container form {
+  max-width: 400px;
+  margin: 0 0;
+  padding: 20px;
+  border: 1px solid #1d858bef;
+  margin: 80px;
+  box-shadow: #000000;
+}
+.update-user-page form {
+  max-width: 400px;
+  margin: 0 0;
+  padding: 20px;
+  border: 1px solid #1d858bef;
+  margin: 80px;
+  box-shadow: #000000;
+}
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+@font-face {
+    font-family: 'Intrum Sans';
+    src: url('../../assets/fonts/IntrumSans-Medium.eot');
+    src: local('Intrum Sans Medium'), local('IntrumSans-Medium'),
+        url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+        url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.form-container {
+    max-width: 550px;
+    margin-left: 100px;
+    font-family: 'Intrum Sans';
+    color: rgb(0, 0, 0);
+    text-align: left;
+
+  }
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #1d858bef;
+    font-family: 'Intrum Sans';
+    color: #000000;
+
+  }
+  
+  .form-group-button {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color:#1d858bef;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Intrum Sans';
+
+    
+  }
+  
+  .error-message,
+  .loading-message {
+    margin-top: 15px;
+  }
+  
+  .login_redirect {
+    font-size: 14px;
+  }
+  
+  
+  .text-signin {
+    
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 750px;
+    font-size: 60px}
+
+    @media (max-width: 768px) {
+  
+        .text-signin {
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 0px}
+
+    .form-container {
+      max-width: 350px;
+      margin-left: 0px;
+      font-family: 'Intrum Sans';
+      color: rgb(0, 0, 0);
+      text-align: left;
+      margin-top: 0px;
+  
+    }
+    
+      }
+      .password-input-container {
+        position: relative;
+        color: #000000;
+
+      }
+      .password-input-container input {
+        padding-right: 30px; /* Adjust the padding to make room for the icon */
+        color: #000000;
+
+      }
+      
+    
+      .input {
+        position: relative;
+        color: #000000;
+      }
+      
+      .input input {
+        padding-right: 30px; /* Adjust the padding to make room for the eye icon */
+        color: #000000;
+
+      }
+      
+      .input i {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust the right position as needed */
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #000000; /* Adjust the color of the icon */
+      }
+
+      .titre-form{
+    margin: 50px;
+        color: #1d858bef;
+        border: none;
+        cursor: pointer;
+        font-family: 'Intrum Sans';
+        
+      }
+
+  
+select {
+    font-family: 'Intrum Sans';
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #1d858bef;
+    border-radius: 5px;
+  }
+  
+  /* Style the select options */
+  select option {
+    font-family: 'Intrum Sans';
+    background-color: #fff;
+    color: #000000;
+  }
+  
+  /* Style the disabled option */
+  select option:disabled {
+    color: #1D527F;
+  }
+  
+  /* Style the selected option */
+  select option:checked {
+    font-family: 'Intrum Sans';
+    background-color: #1d858bef;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+
+ .reservationImg{
+    width: 600px;
+    margin-left: 700px;
+    margin-bottom: -900px;
+
+  }
+
+  

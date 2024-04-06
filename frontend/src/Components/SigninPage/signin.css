@@ -1,0 +1,137 @@
+/* Signin.css */
+@font-face {
+    font-family: 'Intrum Sans';
+    src: url('../../assets/fonts/IntrumSans-Medium.eot');
+    src: local('Intrum Sans Medium'), local('IntrumSans-Medium'),
+        url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+        url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.form-container {
+    max-width: 550px;
+    margin-left: 100px;
+    font-family: 'Intrum Sans';
+    color: rgb(0, 0, 0);
+    text-align: left;
+
+  }
+  
+  .form-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -400px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #1d858bef;
+    font-family: 'Intrum Sans';
+
+  }
+  
+  .form-group-button {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color:#1d858bef;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Intrum Sans';
+
+    
+  }
+  
+  .error-message,
+  .loading-message {
+    margin-top: 15px;
+  }
+  
+  .login_redirect {
+    font-size: 14px;
+  }
+  
+  .text-signin {
+    
+    width: 50%;
+margin-top: 150px;
+    margin-left: 750px;
+    font-size: 60px}
+
+    @media (max-width: 768px) {
+  
+        .text-signin {
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 0px}
+
+    .form-container {
+      max-width: 350px;
+      margin-left: 0px;
+      font-family: 'Intrum Sans';
+      color: rgb(0, 0, 0);
+      text-align: left;
+      margin-top: 200px;
+  
+    }
+    
+      }
+
+
+
+
+      .password-input-container {
+        position: relative;
+      }
+      
+      .password-input-container input {
+        padding-right: 30px; /* Adjust the padding to make room for the icon */
+      }
+      
+      .eye-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust the right position as needed */
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #000000; /* Adjust the color of the icon */
+      }
+      .input {
+        position: relative;
+      }
+      
+      .input input {
+        padding-right: 30px; /* Adjust the padding to make room for the eye icon */
+      }
+      
+      .input i {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust the right position as needed */
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #000000; /* Adjust the color of the icon */
+      }
+      
+      
+      .pointer       { cursor: pointer; }

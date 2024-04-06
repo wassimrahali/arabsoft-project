@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Intrum Sans';
+    src: url('../../assets/fonts/IntrumSans-Medium.eot');
+    src: local('Intrum Sans Medium'), local('IntrumSans-Medium'),
+        url('../../assets/fonts/IntrumSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/IntrumSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/IntrumSans-Medium.woff') format('woff'),
+        url('../../assets/fonts/IntrumSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+/* Override Bootstrap styles for black color */
+
+
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.hello-message {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-right: 40px; /* Add margin for spacing between "Hello" message and the "Sign Out" button */
+    margin-top: 9px;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack items vertically for small screens */
+    }
+
+    .hello-message {
+        margin-bottom: 50px;
+        /* Add margin at the bottom for spacing */
+    }
+}
+
+/* Header.css */
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.avatar {
+    margin-right: 10px;
+    display: flex;
+
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hello-message {
+        margin-bottom: 11px;
+    }
+
+    .avatar {
+        margin-right: 0; /* Adjust margin for avatar in mobile */
+    }
+    .logo {
+        max-width: 95px;
+    }
+    .Navbar.Toggle i.fas.fa-bars {
+        border: #000000; /* Dark color, you can replace it with your preferred dark color */
+      }
+    
+    }
+
+
+#profileDropdown{
+    padding:12px 24px;
+    background: #0b8288;
+    color: rgb(255, 255, 255);
+    height: 48px;
+    font-size: 20px;
+    font-family: 'Intrum Sans',Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    width: auto;
+    font-size: 16px;
+
+}
+
+.logo {
+    width: 120px;
+    height: 28px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.red-text{
+  color: #000000;
+}
+
+
+  
+  .red-text .nav-link {
+    color: #000000;
+    transition: color 0.3s ease; /* Adding a smooth transition effect */
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Intrum Sans';
+
+  }
+  
+  .red-text .nav-link:hover {
+    color: rgb(255, 170, 0); /* Change to the desired hover color */
+  }
+ 
+
+  
+  .my-navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .my-navbar.red-text.fixed {
+    background-color: #edfeea ;
+  }
+
+
+
+/* Add this CSS in your stylesheet */
+
+.fa-1x {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    border-radius: var(--border-radius-large);
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  
+
+  
+  .navbar .dropdown-menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
+  
+  .navbar .dropdown-item {
+    display: inline-block;   
+    letter-spacing: 0.5px;
+    position: relative;
+  }
+
+  .contact-button-2 {
+  color: #007bff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #007bff; /* Add border styling */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-button-2:hover {
+  color: #0056b3;
+  border-color: #0056b3; /* Change border color on hover */
+}
