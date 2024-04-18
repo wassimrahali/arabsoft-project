@@ -1,63 +1,93 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sidebar from './SideBar-Admin/Sidebar';
-import './AdminReservationList/AdminRervationList.css'; // Import the CSS file
+import './AdminReservationList/AdminRervationList.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Pagination from 'react-bootstrap/Pagination'; // Importer la pagination de Bootstrap
+import Modal from 'react-bootstrap/Modal'; // Importer la modal de Bootstrap
 
 const AdminPage = () => {
   const [users, setUsers] = useState([]);
   const [alert, setAlert] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [usersPerPage] = useState(5); // Nombre d'utilisateurs par page
+  const [selectedUserId, setSelectedUserId] = useState(null); // ID de l'utilisateur sélectionné pour la suppression
+  const [showConfirmationModal, setShowConfirmationModal] = useState(false); // État de la modal de confirmation
 
   useEffect(() => {
-    // Fetch users when the component mounts
+    // Récupérer les utilisateurs lorsque le composant est monté
     const fetchUsers = async () => {
       try {
         const response = await axios.get('http://localhost:8000/api/admin/users');
         setUsers(response.data);
       } catch (error) {
-        console.error('Error fetching users:', error);
+        console.error('Erreur lors de la récupération des utilisateurs :', error);
       }
     };
 
     fetchUsers();
   }, []);
 
-  const handleDelete = async (userId) => {
+  const handleDelete = async () => {
     try {
-      // Make a DELETE request to delete the user
-      const response = await axios.delete(`http://localhost:8000/api/admin/user/${userId}`);
+      // Effectuer une requête DELETE pour supprimer l'utilisateur
+      const response = await axios.delete(`http://localhost:8000/api/admin/user/${selectedUserId}`);
 
       if (response.data.message === 'User deleted successfully') {
-        // If deletion is successful, update the users state
-        setUsers(users.filter(user => user._id !== userId));
+        // Si la suppression réussit, mettre à jour l'état des utilisateurs
+        setUsers(users.filter(user => user._id !== selectedUserId));
 
-        // Show success alert
-        setAlert({
-          type: 'success',
-          message: 'User deleted successfully!',
-        });
+        // Afficher une alerte de succès
+  
 
-        // Hide success alert after 3 seconds
+        // Masquer l'alerte de succès après 3 secondes
         setTimeout(() => setAlert(null), 3000);
       } else {
-        console.error('Error deleting user:', response.data.error);
+        console.error('Erreur lors de la suppression de l\'utilisateur :', response.data.error);
 
-        // Show error alert
+        // Afficher une alerte d'erreur
         setAlert({
           type: 'danger',
-          message: 'Error deleting user. Please try again.',
+          message: 'Erreur lors de la suppression de l\'utilisateur. Veuillez réessayer.',
         });
       }
     } catch (error) {
-      console.error('Error deleting user:', error);
+      console.error('Erreur lors de la suppression de l\'utilisateur :', error);
 
-      // Show error alert
+      // Afficher une alerte d'erreur
       setAlert({
         type: 'danger',
-        message: 'Error deleting user. Please try again.',
+        message: 'Erreur lors de la suppression de l\'utilisateur. Veuillez réessayer.',
       });
+    }
+
+    // Cacher la modal de confirmation
+    setShowConfirmationModal(false);
+  };
+
+  // Index du dernier utilisateur de la page actuelle
+  const indexOfLastUser = currentPage * usersPerPage;
+  // Index du premier utilisateur de la page actuelle
+  const indexOfFirstUser = indexOfLastUser - usersPerPage;
+  // Utilisateurs de la page actuelle
+  const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
+
+  // Changer de page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  // Aller à la page précédente
+  const goToPrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  // Aller à la page suivante
+  const goToNextPage = () => {
+    if (currentPage < Math.ceil(users.length / usersPerPage)) {
+      setCurrentPage(currentPage + 1);
     }
   };
 
@@ -69,16 +99,14 @@ const AdminPage = () => {
         <div className="content-b" style={{ color: 'black' }}>
           <div className="card" style={{ width: '95%', padding: '15px' }}>
             <div className="card-header">
-            <h5 className="card-title">
-    <i className="fas fa-users" />   Gestion Des utilisateurs
-</h5>
-
+              <h5 className="card-title">
+                <i className="fas fa-users" /> Gestion Des utilisateurs
+              </h5>
             </div>
 
             {/* Bootstrap Alert */}
             {alert && (
               <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
-                {alert.message}
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close" onClick={() => setAlert(null)}>
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -97,17 +125,17 @@ const AdminPage = () => {
                 </tr>
               </thead>
               <tbody>
-                {users
-                  .filter(user => user.role !== 'admin') // Filter out users with admin role
+                {currentUsers
+                  .filter(user => user.role !== 'admin') // Filtrer les utilisateurs avec le rôle 'admin'
                   .map((user) => (
                     <tr key={user._id}>
                       <td>{user._id}</td>
                       <td>{user.name}</td>
                       <td>{user.email}</td>
-                      <th>{user.phoneNumber}</th>
-                      <th>{user.enterpriseName}</th>
+                      <td>{user.phoneNumber}</td>
+                      <td>{user.enterpriseName}</td>
                       <td>
-                        <button onClick={() => handleDelete(user._id)} style={{ backgroundColor:"#3E97FF", padding: "15px",}}>
+                        <button onClick={() => { setSelectedUserId(user._id); setShowConfirmationModal(true); }} style={{ backgroundColor:"#3E97FF", padding: "15px",}}>
                           <FontAwesomeIcon icon={faTrash} style={{ marginRight: "5px" }} />
                           Delete
                         </button>
@@ -116,9 +144,42 @@ const AdminPage = () => {
                   ))}
               </tbody>
             </table>
+
+            {/* Pagination */}
+            <Pagination>
+              <Pagination.Prev onClick={goToPrevPage}>
+                <FontAwesomeIcon icon={faArrowLeft} />
+              </Pagination.Prev>
+              {Array.from({length: Math.ceil(users.length / usersPerPage)}, (_, i) => 
+                <Pagination.Item key={i+1} active={i+1 === currentPage} onClick={() => paginate(i+1)}>
+                  {i+1}
+                </Pagination.Item>
+              )}
+              <Pagination.Next onClick={goToNextPage}>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Pagination.Next>
+            </Pagination>
           </div>
         </div>
       </div>
+
+      {/* Modal de confirmation */}
+      <Modal show={showConfirmationModal} onHide={() => setShowConfirmationModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmation de suppression</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Êtes-vous sûr de vouloir supprimer cet utilisateur ?
+        </Modal.Body>
+        <Modal.Footer>
+          <button style={{ backgroundColor:"#3E97FF", padding: "15px",}}onClick={() => setShowConfirmationModal(false)}>
+            Annuler
+          </button>
+          <button style={{ backgroundColor:"#E73744", padding: "15px",}} variant="danger" onClick={handleDelete}>
+            Supprimer
+          </button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };

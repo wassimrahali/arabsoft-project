@@ -13,7 +13,7 @@
 }
 
 .admin-reservation-list {
-    overflow-x: auto; /* Add horizontal scroll for small screens */
+    overflow-x: auto;
 
   }
   
@@ -44,7 +44,6 @@
     font-weight: bold;
   }
   
-  /* Responsive styles for mobile screens */
   @media (max-width: 600px) {
     .reservation-table th, .reservation-table td {
       font-size: 10px;
@@ -71,11 +70,9 @@
 
   }
 
-  /* AdminRervationList.css */
 
 .admin-reservation-list {
-  display: flex; /* Use flexbox to arrange the sidebar and content */
-  
+  display: flex; 
  
 }
 
@@ -86,14 +83,13 @@
   top: 0;
   left: 0;
   padding-top: 20px;
-  z-index: 1; /* Ensure the sidebar appears above the content */
-
+  z-index: 1;
 }
 
 .content-b {
-  margin-left: 250px; /* Adjust the margin to match the width of the sidebar */
+  margin-left: 250px;
   padding: 20px;
-  flex-grow: 1; /* Allow the content to grow to fill available space */
+  flex-grow: 1; 
   background-color:#F5F7FA;
 }
 

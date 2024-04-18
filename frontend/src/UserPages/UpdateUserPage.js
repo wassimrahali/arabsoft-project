@@ -83,7 +83,7 @@ const UpdateUserPage = ({ match }) => {
         <label>
 
           Name:
-          <input type="text" name="name" value={user.name} onChange={handleChange} disabled />
+          <input type="text" name="name" value={user.name} onChange={handleChange}  />
         </label>
         <br />
         <label>

@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from './SideBar-Admin/Sidebar';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
-
+   
 const AdminDashboard = () => {
   const [reservations, setReservations] = useState([]);
   const [users, setUsers] = useState([]);
