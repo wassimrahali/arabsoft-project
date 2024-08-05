@@ -10,23 +10,8 @@
 
 ## **Screenshots**
 
-### **Homepage**
-![Homepage](https://github.com/wassimrahali/arabsoft-project/assets/140222867/screenshot-homepage.png)
+![Uploading screencapture-github-wassimrahali-arabsoft-project-2024-08-06-00_36_48.png…]()
 
-### **Features Section**
-![Features Section](https://github.com/wassimrahali/arabsoft-project/assets/140222867/screenshot-features.png)
-
-### **Product Details**
-![Product Details](https://github.com/wassimrahali/arabsoft-project/assets/140222867/screenshot-product.png)
-
-### **Create an Account**
-![Create an Account](https://github.com/wassimrahali/arabsoft-project/assets/140222867/screenshot-create-account.png)
-
-## **Technologies Used**
-
-- HTML
-- CSS
-- JavaScript
 
 ## **How to Run**
 
