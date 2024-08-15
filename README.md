@@ -30,8 +30,4 @@
 
 - **Wassim Rahali**
 
-Feel free to contribute by opening issues or submitting pull requests. Your feedback and contributions are welcome!
 
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
